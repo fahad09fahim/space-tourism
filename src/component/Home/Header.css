@@ -1,0 +1,35 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 0px 125px;
+}
+.nav-bar p {
+  height: 0.1px;
+  width: 473px;
+  opacity: 0.2514851987361908;
+  background: #fff;
+  flex-shrink: 0;
+  margin-left: 64px;
+}
+.nav-link {
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+  width: 830px;
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  padding: 0 20px;
+}
+.active {
+  color: green;
+}

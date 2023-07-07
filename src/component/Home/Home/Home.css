@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
+  padding-top: 2rem;
+}
+.text-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  color: aliceblue;
+}
+.text-container h1 {
+  font-size: 120px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+}
+.text-container p {
+  width: 444px;
+  word-wrap: break-word;
+}
+.explore-btn {
+  width: 274px;
+  height: 274px;
+  border-radius: 274px;
+}
+.explore-btn span {
+  color: #0b0d17;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
