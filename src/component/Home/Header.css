@@ -47,16 +47,39 @@
 
 /* responsive design */
 @media screen and (max-width: 992px) {
-  .nav-bar p,
-  .nav-link,
-  .nav-link a {
-    display: none;
-  }
   .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+  }
+  .nav-bar p,
+  .nav-link {
+    display: none;
+  }
+  .nav-link-mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    border: 0;
+    border-radius: 20px 0 0 20px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+    right: 0;
+    top: 50px;
+    transition: all 0.5s ease-out;
+    &.nav-link-mobile a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      border-radius: 10px;
+      &:hover {
+        box-shadow: 0px 2px 10px 1px white;
+        transition: all 0.5s ease-in-out;
+      }
+    }
   }
   .nav-icon {
     height: 40px;
