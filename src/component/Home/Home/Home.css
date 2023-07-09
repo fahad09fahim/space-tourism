@@ -27,12 +27,20 @@
 .explore-btn {
   width: 274px;
   height: 274px;
+  padding: 0;
+  border: 0;
   border-radius: 274px;
+  &:hover {
+    box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.13);
+    transition: all 0.5s ease-in-out;
+  }
 }
-.explore-btn span {
+
+.btn-text {
   color: #0b0d17;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
