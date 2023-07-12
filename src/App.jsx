@@ -18,7 +18,7 @@ function App() {
         },
         {
           path: "/destination",
-          loader: async () => {
+          loader: () => {
             return fetch("destination.json");
           },
           element: <Destination />,
