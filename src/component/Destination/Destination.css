@@ -12,15 +12,14 @@
   justify-content: space-between;
   margin: 0 163px 0 163px;
   top: 0;
+  gap: 178px;
 }
-.info {
-  margin-left: 15vh;
-  /* planet name css code */
-  &.info h1 {
-    font-size: 100px;
-    font-weight: 400;
-    margin: 0;
-  }
+
+/* planet name css code */
+.planet-name {
+  font-size: 100px;
+  font-weight: 400;
+  margin: 0;
 }
 .planet-btn {
   text-transform: uppercase;
@@ -29,10 +28,14 @@
   margin: 0 0 0 20px;
   cursor: pointer;
 }
+#planet-btn-border {
+  border-bottom: 1px solid white;
+}
 
 .planet-description {
-  width: 80%;
-  font-size: 18px;
+  width: 440px;
+  height: 118px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 20px;
 }
@@ -44,4 +47,55 @@
 .travel-dis-info {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .header-text {
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .header-text div {
+    display: none;
+  }
+  .destination-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .planet-image {
+    width: 220px;
+    margin-bottom: 30px;
+  }
+  .planet-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .planet-btn {
+    text-transform: uppercase;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .planet-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .planet-name {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .planet-description {
+    font-size: 12px;
+    width: 325px;
+    height: auto;
+  }
 }

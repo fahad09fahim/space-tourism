@@ -14,20 +14,25 @@ const Destination = () => {
       </div>
       <div className="destination-container">
         <div>
-          <img src={images} alt="" />
+          <img className="planet-image" src={images} alt="" />
         </div>
-        <div className="info">
-          {data.map((i, index) => (
-            <h2
-              className="planet-btn"
-              key={index}
-              onClick={() => setValue(index)}
-            >
-              {i.name}
-            </h2>
-          ))}
-          <h1>{name}</h1>
-          <p className="planet-description">{description}</p>
+        <div>
+          <div className="planet-nav">
+            {data.map((i, index) => (
+              <h2
+                className="planet-btn"
+                id={`${index === value && "planet-btn-border"}`}
+                key={index}
+                onClick={() => setValue(index)}
+              >
+                {i.name}
+              </h2>
+            ))}
+          </div>
+          <div className="planet-info">
+            <h1 className="planet-name">{name}</h1>
+            <p className="planet-description">{description}</p>
+          </div>
           <div className="third-info">
             <p className="travel-dis-info">
               <span>AVG. DISTANCE:</span>
