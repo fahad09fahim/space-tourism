@@ -18,6 +18,9 @@ function App() {
         },
         {
           path: "/destination",
+          loader: async () => {
+            return fetch("destination.json");
+          },
           element: <Destination />,
         },
         {

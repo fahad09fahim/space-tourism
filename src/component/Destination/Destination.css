@@ -1,0 +1,47 @@
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.destination-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 163px 0 163px;
+  top: 0;
+}
+.info {
+  margin-left: 15vh;
+  /* planet name css code */
+  &.info h1 {
+    font-size: 100px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+.planet-btn {
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+}
+
+.planet-description {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.third-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.travel-dis-info {
+  display: flex;
+  flex-direction: column;
+}

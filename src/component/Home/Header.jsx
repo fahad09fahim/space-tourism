@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import Logo from "../../assets/shared/logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
@@ -15,10 +15,18 @@ const Header = () => {
       {/* rectangular */}
       <p></p>
       <div className={open ? "nav-link-mobile" : "nav-link"}>
-        <NavLink to="/">00 Home</NavLink>
-        <NavLink to="/destination">01 Destination</NavLink>
-        <NavLink to="/crew">02 Crew</NavLink>
-        <NavLink to="/technology">03 Technology</NavLink>
+        <Link type="button" to="/">
+          00 Home
+        </Link>
+        <Link type="button" to="/destination">
+          01 Destination
+        </Link>
+        <Link type="button" to="/crew">
+          02 Crew
+        </Link>
+        <Link type="button" to="/technology">
+          03 Technology
+        </Link>
       </div>
       <div className="toggle-btn" onClick={() => setOpen(!open)}>
         {open ? <XMarkIcon /> : <Bars3Icon />}
