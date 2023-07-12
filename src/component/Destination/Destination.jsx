@@ -36,11 +36,11 @@ const Destination = () => {
           <div className="third-info">
             <p className="travel-dis-info">
               <span>AVG. DISTANCE:</span>
-              {travel}
+              {distance}
             </p>
             <p className="travel-dis-info">
               <span>Est. travel time:</span>
-              {distance}
+              {travel}
             </p>
           </div>
         </div>
