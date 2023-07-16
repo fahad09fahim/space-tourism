@@ -24,6 +24,20 @@
   width: 444px;
   word-wrap: break-word;
 }
+/* explore btn animation */
+
+@keyframes slideInright {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.explore-btn,
+.btn-text {
+  animation: slideInright 0.7s ease-in 0s normal;
+}
 .explore-btn {
   width: 274px;
   height: 274px;

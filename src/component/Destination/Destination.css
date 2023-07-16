@@ -49,6 +49,18 @@
   flex-direction: column;
 }
 
+@keyframes slideInleft {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.planet-image {
+  animation: slideInleft 1.5s ease-in 0s 1 normal;
+}
+
 @media screen and (max-width: 992px) {
   .header-text {
     display: flex;
